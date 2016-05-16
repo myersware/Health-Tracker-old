@@ -1,0 +1,12 @@
+﻿<div>
+    <h3>{{ item.date }}</h3>
+    <ul>
+        <li *ngIf="item.weight">weight: {{ item.weight }}</li>
+        <li *ngIf="item.workout">workout
+            <ul>
+                <li *ngIf="item.workout.treadmill">treadmill: {{ item.workout.treadmill.distance }} in {{ item.workout.treadmill.time }}</li>
+                <li *ngIf="item.workout.rowing">rowing: {{ item.workout.rowing.distance }} in {{ item.workout.rowing.time }}</li>
+            </ul>
+        </li>
+    </ul>
+</div>

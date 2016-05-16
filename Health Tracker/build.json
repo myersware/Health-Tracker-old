@@ -1,0 +1,18 @@
+{
+  "android": {
+    "debug": {
+      "keystore": "c:\\my-release-key.keystore",
+      "storePassword": "jjm2580J",
+      "alias": "Myers",
+      "password": "jjm2580J",
+      "keystoreType": ""
+    },
+    "release": {
+      "keystore": "c:\\my-release-key.keystore",
+      "storePassword": "jjm2580J",
+      "alias": "Myers",
+      "password": "jjm2580J",
+      "keystoreType": ""
+    }
+  }
+ }

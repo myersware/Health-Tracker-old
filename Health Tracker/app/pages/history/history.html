@@ -1,0 +1,36 @@
+<ion-navbar *navbar class="hide-border">
+  <button menuToggle >
+    <ion-icon name="menu"></ion-icon>
+  </button>
+
+</ion-navbar>
+
+<ion-toolbar>
+  <ion-searchbar primary
+                 [(ngModel)]="queryText"
+                 (input)="updateHistory()"
+                 placeholder="Search">
+  </ion-searchbar>
+</ion-toolbar>
+
+<ion-content class="history">
+    <ion-refresher (refresh)="doRefresh($event)">
+        <ion-refresher-content
+          pullingIcon="arrow-dropdown"
+          pullingText="Pull to refresh"
+          refreshingSpinner="circles"
+          refreshingText="Refreshing...">
+        </ion-refresher-content>
+    </ion-refresher>
+
+  <ion-list>
+
+      <div *ngFor="#item of history">
+          <tracker-day [item]=item></tracker-day>
+      </div>
+
+      <div id="output"></div>
+
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,29 @@
+
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Settings</ion-title>
+</ion-navbar>
+
+<ion-content>
+    <ion-refresher (refresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown"
+                               pullingText="Pull to refresh"
+                               refreshingSpinner="circles"
+                               refreshingText="Refreshing...">
+        </ion-refresher-content>
+    </ion-refresher>
+
+    <h2>Welcome to Myers Health Tracker App</h2>
+    <p>
+        Most recent entries...
+    </p>
+    <p>
+        <button>Add entry</button>
+    </p>
+    <div *ngFor="#item of history">
+        <tracker-day [item]=item></tracker-day>
+    </div>
+    <div id="output"></div>
+</ion-content>

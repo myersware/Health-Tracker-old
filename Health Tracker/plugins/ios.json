@@ -1,0 +1,44 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-code-push": {
+            "PACKAGE_NAME": "ms.ionic.conference"
+        },
+        "cordova-plugin-googleplus": {
+            "REVERSED_CLIENT_ID": "myreversedclientid",
+            "PACKAGE_NAME": "ms.ionic.conference"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "myersware.tracker.health"
+        }
+    },
+    "dependent_plugins": {
+        "code-push": {
+            "PACKAGE_NAME": "ms.ionic.conference"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "ms.ionic.conference"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "ms.ionic.conference"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "ms.ionic.conference"
+        },
+        "cordova-plugin-zip": {
+            "PACKAGE_NAME": "ms.ionic.conference"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "ms.ionic.conference"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "ms.ionic.conference"
+        }
+    }
+}

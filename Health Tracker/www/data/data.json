@@ -1,0 +1,49 @@
+{
+  "history": [
+    {
+      "id": 0,
+      "date": "04/26/2016",
+      "weight": 183,
+      "workout": {
+        "treadmill": {
+          "distance": 1.25,
+          "time": "20:45"
+        },
+        "rowing": {
+          "distance": 1.5,
+          "time": "8:15"
+        }
+      }
+    },
+    {
+      "id": 1,
+      "date": "04/28/2016",
+      "weight": 182,
+      "workout": {
+        "treadmill": {
+          "distance": 1.25,
+          "time": "20:44"
+        },
+        "rowing": {
+          "distance": 1.5,
+          "time": "8:14"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "date": "04/30/2016",
+      "weight": 181,
+      "workout": {
+        "treadmill": {
+          "distance": 1.25,
+          "time": "20:43"
+        },
+        "rowing": {
+          "distance": 1.5,
+          "time": "8:13"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+
+<ion-navbar *navbar>
+  <button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+  <ion-title>Settings</ion-title>
+</ion-navbar>
+
+<ion-content>
+
+    <div class="logo">
+      <img src="img/appicon.png">
+    </div>
+      <div>
+          <form [ngFormModel]="authForm" (submit)="onSubmit(authForm.value)">
+              <ion-item>
+                  <ion-input type="text" required placeholder="Calendar name" ngControl="calendar"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-input type="text" required placeholder="Sheet name" ngControl="sheet"></ion-input>
+              </ion-item>
+              <button primary (click)="onSubmit()" [disabled]="!authForm.valid" block>Save</button>
+          </form>
+      </div>
+    <div>
+        <p>Connect to source data or disconnect.</p>
+        <button primary (click)="doConnect()">Connect</button>
+        <button secondary (click)="doDisconnect()">Disconnect</button>
+    </div>
+
+</ion-content>

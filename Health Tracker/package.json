@@ -1,0 +1,55 @@
+{
+  "name": "health-tracker",
+  "description": "Jim Myers Health Tracker App",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "angular2": "^2.0.0-beta.15",
+    "es6-collections": "^0.5.6",
+    "es6-promise": "3.0.2",
+    "es6-shim": "^0.35.0",
+    "ionic-angular": "2.0.0-beta.6",
+    "ionic-native": "^1.1.0",
+    "ionicons": "3.0.0-alpha.3",
+    "ng2-cordova-oauth": "0.0.4",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2"
+  },
+  "devDependencies": {
+    "aes": "^0.1.0",
+    "async": "^2.0.0-rc.4",
+    "browserify": "^13.0.0",
+    "cordova": "^6.1.1",
+    "del": "2.2.0",
+    "gapi": "0.0.3",
+    "google-spreadsheet": "^2.0.3",
+    "gulp": "3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-typescript": "^2.13.0",
+    "gulp-watch": "4.3.5",
+    "immutable": "^3.8.1",
+    "ionic-gulp-browserify-typescript": "^1.0.0",
+    "ionic-gulp-fonts-copy": "^1.0.0",
+    "ionic-gulp-html-copy": "^1.0.0",
+    "ionic-gulp-sass-build": "^1.0.0",
+    "ionic-gulp-scripts-copy": "^1.0.1",
+    "run-sequence": "1.1.5",
+    "tsd": "^0.6.5"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-whitelist",
+    {
+      "locator": "https://github.com/VersoSolutions/CordovaClipboard",
+      "id": "com.verso.cordova.clipboard"
+    }
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    "android"
+  ]
+}
